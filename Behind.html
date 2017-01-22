@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<title>Behind</title>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href="main.css" rel="stylesheet" type="text/css">
+
+
+<body >
+
+<div id="heading">
+    <header id="top">
+    <h2>Some behind the scenes of this website</h2>    
+    <nav id="navi">
+      <ul>
+        <li><a href="Poonam.html">Home</a></li>
+        <li><a href="Images.html">Images</a></li>
+        <li><a href="Letter.html">Letter</a></li>
+        <li><a href="Question.html">Question</a></li>
+        <li><a href="Behind.html">Behind the scenes</a></li>
+        
+      </ul>
+    </nav>
+    </header>
+
+
+<div class="w3-content">
+  <img class="mySlides" src="p.png" style="width:80%">
+  <img class="mySlides" src="m.png" style="width:80%" >
+  <img class="mySlides" src="i.png" style="width:80%">
+  <img class="mySlides" src="l.png" style="width:80%">
+  <img class="mySlides" src="q.png" style="width:80%">
+
+
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</div>
+</body>
+</html>
+
+
+</body>
+</html>
